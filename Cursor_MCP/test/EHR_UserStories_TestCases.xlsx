@@ -1,0 +1,90 @@
+User Story,Test Case Title,Test Steps,Expected Result
+As a front desk staff, I want to register new patients manually, So that I can capture all required patient information directly into the EHR system.,Register a New Patient with All Required Fields,"1. Log in as front desk staff.
+2. Navigate to the patient registration page.
+3. Enter valid data in all required fields (demographic, contact, insurance, preferences).
+4. Submit the registration form.",Patient is successfully registered and appears in the patient list.
+As a front desk staff, I want to register new patients manually, So that I can capture all required patient information directly into the EHR system.,Attempt Registration with Missing Required Fields,"1. Log in as front desk staff.
+2. Navigate to the patient registration page.
+3. Leave one or more required fields blank.
+4. Attempt to submit the form.",System displays validation errors and prevents submission.
+As a front desk staff, I want to register new patients manually, So that I can capture all required patient information directly into the EHR system.,Register Patient with Optional Fields Left Blank,"1. Log in as front desk staff.
+2. Navigate to the patient registration page.
+3. Fill in only required fields, leaving optional fields blank.
+4. Submit the form.",Patient is registered successfully; optional fields remain empty.
+As a practice administrator, I want to import patient data from other EHR systems, So that I can efficiently onboard multiple patients without manual data entry.,Import Valid Patient Data File,"1. Log in as practice administrator.
+2. Navigate to the patient import section.
+3. Select a valid EHR data file for import.
+4. Start the import process.",All patients from the file are imported and listed in the system.
+As a practice administrator, I want to import patient data from other EHR systems, So that I can efficiently onboard multiple patients without manual data entry.,Import File with Invalid Data Format,"1. Log in as practice administrator.
+2. Navigate to the patient import section.
+3. Select a file with an invalid or unsupported format.
+4. Attempt to import.",System displays an error message and does not import any data.
+As a practice administrator, I want to import patient data from other EHR systems, So that I can efficiently onboard multiple patients without manual data entry.,Import File with Duplicate Patient Records,"1. Log in as practice administrator.
+2. Navigate to the patient import section.
+3. Select a file containing duplicate patient records.
+4. Start the import process.",System identifies duplicates and either merges or rejects them, displaying appropriate messages.
+As a medical assistant, I want to upload patient information using CSV files, So that I can quickly register batches of patients and save time.,Upload Valid CSV File,"1. Log in as medical assistant.
+2. Navigate to the CSV upload section.
+3. Select a valid CSV file with correct headers and data.
+4. Upload the file.",All patients in the CSV are registered and visible in the patient list.
+As a medical assistant, I want to upload patient information using CSV files, So that I can quickly register batches of patients and save time.,Upload CSV File with Missing Required Columns,"1. Log in as medical assistant.
+2. Navigate to the CSV upload section.
+3. Select a CSV file missing required columns (e.g., date of birth).
+4. Attempt to upload.",System displays an error indicating missing columns and does not process the file.
+As a medical assistant, I want to upload patient information using CSV files, So that I can quickly register batches of patients and save time.,Upload CSV File with Invalid Data,"1. Log in as medical assistant.
+2. Navigate to the CSV upload section.
+3. Select a CSV file with invalid data (e.g., text in a date field).
+4. Attempt to upload.",System highlights invalid rows and prevents their import, showing error messages.
+As a front desk staff, I want the system to validate patient data during registration, So that I can prevent incomplete or incorrect patient records from being created.,Enter Invalid Email Address,"1. Log in as front desk staff.
+2. Navigate to the registration form.
+3. Enter an invalid email address format.
+4. Attempt to submit the form.",System displays a validation error for the email field.
+As a front desk staff, I want the system to validate patient data during registration, So that I can prevent incomplete or incorrect patient records from being created.,Enter Future Date of Birth,"1. Log in as front desk staff.
+2. Enter a date of birth in the future.
+3. Attempt to submit the form.",System displays a validation error for the date of birth field.
+As a front desk staff, I want the system to validate patient data during registration, So that I can prevent incomplete or incorrect patient records from being created.,Submit Form with All Valid Data,"1. Log in as front desk staff.
+2. Enter valid data in all fields.
+3. Submit the form.",Form is submitted successfully without validation errors.
+As a practice administrator, I want the patient registration process to comply with HIPAA regulations, So that patient data is protected and the organization remains compliant.,Attempt to Access Patient Data Without Authorization,"1. Log in as a user without patient data access rights.
+2. Attempt to view or edit patient registration data.",Access is denied; system displays an authorization error.
+As a practice administrator, I want the patient registration process to comply with HIPAA regulations, So that patient data is protected and the organization remains compliant.,Verify Data Encryption in Transit,"1. Register a new patient.
+2. Monitor network traffic during registration.",Patient data is transmitted over encrypted (HTTPS) channels.
+As a practice administrator, I want the patient registration process to comply with HIPAA regulations, So that patient data is protected and the organization remains compliant.,Check Audit Trail for Patient Registration,"1. Register a new patient.
+2. Access the audit log as an administrator.",Audit log records the registration event with user, timestamp, and action details.
+As a front desk staff, I want to capture demographic, contact, insurance, and patient preference information during registration, So that all necessary details are available for healthcare delivery.,Enter All Demographic and Contact Information,"1. Log in as front desk staff.
+2. Fill in all demographic and contact fields for a new patient.
+3. Submit the form.",All entered information is saved and displayed in the patient profile.
+As a front desk staff, I want to capture demographic, contact, insurance, and patient preference information during registration, So that all necessary details are available for healthcare delivery.,Enter Insurance Information,"1. Log in as front desk staff.
+2. Enter valid insurance details during registration.
+3. Submit the form.",Insurance information is saved and visible in the patient’s record.
+As a front desk staff, I want to capture demographic, contact, insurance, and patient preference information during registration, So that all necessary details are available for healthcare delivery.,Enter Patient Preferences,"1. Log in as front desk staff.
+2. Enter patient preferences (e.g., preferred language, communication method).
+3. Submit the form.",Preferences are saved and displayed in the patient profile.
+As a medical assistant, I want the registration process to integrate seamlessly with existing EHR workflows, So that I can avoid duplicate work and maintain efficient operations.,Register Patient and Verify EHR Integration,"1. Log in as medical assistant.
+2. Register a new patient.
+3. Navigate to the EHR workflow (e.g., appointment scheduling).",Newly registered patient is available for selection in EHR workflows.
+As a medical assistant, I want the registration process to integrate seamlessly with existing EHR workflows, So that I can avoid duplicate work and maintain efficient operations.,Edit Patient Data and Check Workflow Update,"1. Edit an existing patient’s information.
+2. Access related EHR workflows.",Updated patient data is reflected in all relevant workflows.
+As a medical assistant, I want the registration process to integrate seamlessly with existing EHR workflows, So that I can avoid duplicate work and maintain efficient operations.,Register Patient via Batch Import and Verify Workflow,"1. Import patients using CSV or EHR import.
+2. Access EHR workflows.",Imported patients are available in all integrated workflows.
+As a front desk staff, I want an intuitive, multi-step registration form, So that I can complete patient onboarding with minimal training.,Navigate Through Multi-Step Form,"1. Log in as front desk staff.
+2. Start a new patient registration.
+3. Move through each step of the form using “Next” and “Back” buttons.",User can navigate between steps without losing entered data.
+As a front desk staff, I want an intuitive, multi-step registration form, So that I can complete patient onboarding with minimal training.,Attempt to Skip Required Step,"1. Start a new registration.
+2. Try to proceed to the next step without completing required fields.",System prevents navigation and highlights missing required fields.
+As a front desk staff, I want an intuitive, multi-step registration form, So that I can complete patient onboarding with minimal training.,Complete Registration Using Multi-Step Form,"1. Fill out all steps of the registration form.
+2. Submit the completed form.",Patient is registered successfully; confirmation message is displayed.
+As a billing staff, I want accurate and validated patient insurance information at registration, So that billing processes are efficient and error-free.,Enter Valid Insurance Information,"1. Log in as billing staff.
+2. Register a new patient with valid insurance details.
+3. Submit the form.",Insurance information is saved and marked as valid.
+As a billing staff, I want accurate and validated patient insurance information at registration, So that billing processes are efficient and error-free.,Enter Invalid Insurance Policy Number,"1. Log in as billing staff.
+2. Enter an invalid or incomplete insurance policy number.
+3. Attempt to submit the form.",System displays a validation error for the insurance policy number.
+As a billing staff, I want accurate and validated patient insurance information at registration, So that billing processes are efficient and error-free.,Verify Insurance Information in Billing Module,"1. Register a patient with insurance details.
+2. Access the billing module.",Patient’s insurance information is available and accurate in the billing module.
+As an IT administrator, I want to support multiple data entry methods for patient registration,Register Patient Manually,"1. Log in as IT administrator.
+2. Register a new patient using manual entry.",Patient is registered and visible in the system.
+As an IT administrator, I want to support multiple data entry methods for patient registration,Register Patient via EHR Import,"1. Log in as IT administrator.
+2. Import patient data from another EHR system.",Imported patients are registered and visible in the system.
+As an IT administrator, I want to support multiple data entry methods for patient registration,Register Patient via CSV Upload,"1. Log in as IT administrator.
+2. Upload a CSV file with patient data.",Patients from the CSV file are registered and visible in the system.

@@ -1,0 +1,24 @@
+{
+  "name": "puppeteer-api",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "gologin": "^2.1.28",
+    "puppeteer": "^24.13.0"
+  },
+  "devDependencies": {
+    "@types/puppeteer": "^5.4.7",
+    "@types/puppeteer-core": "^5.4.0"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "everbetter-api-testing",
+  "version": "1.0.0",
+  "description": "Beginner-friendly, scalable Playwright API automation framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.43.1",
+    "dotenv": "^16.3.1"
+  },
+  "dependencies": {
+    "axios": "^1.10.0"
+  }
+}

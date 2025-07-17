@@ -1,0 +1,15 @@
+{
+  "name": "playwright-login-pom-ts",
+  "version": "1.0.0",
+  "description": "Playwright automation for login functionality using Page Object Model in TypeScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.44.1",
+    "typescript": "^5.4.5"
+  }
+}
